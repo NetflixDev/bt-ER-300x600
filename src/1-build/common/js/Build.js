@@ -77,7 +77,7 @@ export function EndFrame(arg) {
 
 	// logo
 	T.netflixLogo = document.createElement('netflix-brand-logo')
-	T.netflixLogo.setAttribute('width', 90)
+	T.netflixLogo.setAttribute('width', 112)
 	T.appendChild(T.netflixLogo)
 
 	// cta
@@ -85,8 +85,9 @@ export function EndFrame(arg) {
 	T.cta.setAttribute('data-dynamic-key', 'CTA')
 	T.cta.setAttribute('arrow', '')
 	T.cta.setAttribute('border', '')
-	T.cta.setAttribute('width', 90)
-	T.cta.setAttribute('height', 24)
+	T.cta.setAttribute('width', 107)
+	T.cta.setAttribute('max-width', 117)
+	T.cta.setAttribute('height', 28)
 	T.appendChild(T.cta)
 
 	// ratings bug
@@ -128,7 +129,7 @@ export function EndFrame(arg) {
 				x: Align.CENTER,
 				y: {
 					type: Align.BOTTOM,
-					offset: -48
+					offset: -65
 				}
 			})
 			T.removeChild(T.tuneIn)
@@ -144,7 +145,7 @@ export function EndFrame(arg) {
 				x: Align.CENTER,
 				y: {
 					type: Align.BOTTOM,
-					offset: -48
+					offset: -65
 				}
 			})
 			T.removeChild(T.ftm)
@@ -154,11 +155,11 @@ export function EndFrame(arg) {
 		Align.set(T.netflixLogo, {
 			x: {
 				type: Align.LEFT,
-				offset: 44
+				offset: 28
 			},
 			y: {
 				type: Align.TOP,
-				offset: 210
+				offset: 551
 			}
 		})
 
@@ -167,11 +168,11 @@ export function EndFrame(arg) {
 		Align.set(T.cta, {
 			x: {
 				type: Align.LEFT,
-				offset: 166
+				offset: 155
 			},
 			y: {
 				type: Align.TOP,
-				offset: 210
+				offset: 551
 			}
 		})
 
