@@ -8,9 +8,9 @@ import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import '@netflixadseng/wc-netflix-flushed-ribbon'
 import '@netflixadseng/wc-netflix-video'
+import CanvasIris from '@common/js/CanvasIris.js'
 import { UIComponent, UIBorder, UIButton, UIImage, TextFormat, UITextField, UISvg } from 'ad-ui'
 import { ObjectUtils } from 'ad-utils'
-import CanvasIris from '@common/js/CanvasIris'
 
 export function Main() {
 	var T = Markup.get('main')
@@ -25,6 +25,20 @@ export function Main() {
 		userSelect: 'none'
 	})
 	Styles.setCss(T, { backgroundColor: '#000000' })
+
+	return T
+}
+
+// ==============================================================================================================
+export function Intro(arg) {
+	const base = {
+		id: 'intro-container',
+		css: {
+			width: 'inherit',
+			height: 'inherit'
+		}
+	}
+	const T = new UIComponent(ObjectUtils.defaults(arg, base, true))
 
 	return T
 }
