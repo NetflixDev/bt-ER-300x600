@@ -9,14 +9,14 @@ module.exports = {
   "description": "C20/Monet-compatible templates that use  https://github.com/ff0000-ad-tech/ad-docs/blob/master/README.md",
   "type": "build_templates",
   "builder": {
-    "label": "Centered Branding",
+    "label": "300x600 NF Global Template",
     "tier": "endframe-resolve",
     "size": "300x600",
     "creative": "./3-traffic/default/300x600"
   },
   "context": "RED Interactive",
   "state": "published",
-  "updated": 1556143471535,
+  "updated": 1556221623861,
   "username": "GitHub",
   "full_name": "NetflixDev/bt-ER-300x600",
   "html_url": "https://github.com/NetflixDev/bt-ER-300x600",
