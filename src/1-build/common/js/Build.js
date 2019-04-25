@@ -71,7 +71,7 @@ export function EndFrame(arg) {
 		format: TextFormat.INLINE_FIT_CLAMP,
 		alignText: Align.CENTER,
 		spacing: -0.2,
-		text: 'A NETFLIX FILM'
+		text: ''
 	})
 
 	// title treatment
