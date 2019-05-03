@@ -1,6 +1,6 @@
 // GENERIC SOURCE TRACKER: bt-Endframe-Resolve
 if (typeof module === 'undefined') {
-  module = {}
+	module = {}
 }
 // prettier-ignore
 module.exports = {
