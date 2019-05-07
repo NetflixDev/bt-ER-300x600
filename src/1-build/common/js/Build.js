@@ -8,7 +8,6 @@ import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import '@netflixadseng/wc-netflix-flushed-ribbon'
 import '@netflixadseng/wc-netflix-video'
-import CanvasIris from '@common/js/CanvasIris.js'
 import { UIComponent, UIBorder, UIButton, UIImage, TextFormat, UITextField, UISvg } from 'ad-ui'
 import { ObjectUtils } from 'ad-utils'
 
@@ -123,11 +122,22 @@ export function EndFrame(arg) {
 	T.postMarkupStyling = function() {
 		let T = View.endFrame
 
-		// title treatment
-		Align.set(T.tt, {
-			x: Align.CENTER,
-			y: Align.CENTER
-		})
+		// title treatment:
+		// no TT url provided
+		// so using default TT for given layout
+		if (!adData.hasTT) {
+			// removing empty netflix-img element before using default TT
+			T.removeChild(T.tt)
+			T.tt = new UIImage({
+				target: T,
+				source: adData.ttSrc,
+				css: {
+					width: 300
+				}
+			})
+		}
+
+		Align.set(T.tt, Align.CENTER)
 
 		Align.set(T.pedigree, {
 			x: {
