@@ -1,7 +1,4 @@
 node_modules
-!dist/1-build/node_modules
-dist/1-build/node_modules/*
-!@netflixadseng
 2-debug
 
 bower_components/
@@ -11,3 +8,4 @@ log.txt
 
 # BSA Misc Files
 src/.gitignore
+dist/.gitignore
