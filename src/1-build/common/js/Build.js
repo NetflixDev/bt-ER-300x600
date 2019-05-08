@@ -4,6 +4,7 @@ import '@netflixadseng/wc-netflix-text'
 import '@netflixadseng/wc-netflix-img'
 import { Styles, Markup, Align, Effects } from 'ad-view'
 import { ImageManager } from 'ad-control'
+import { titleTreatmentLayout } from './EndFrame/postmarkups/shared.js'
 import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import '@netflixadseng/wc-netflix-flushed-ribbon'
@@ -53,10 +54,10 @@ export function EndFrame(arg) {
 	}
 	const T = new UIComponent(ObjectUtils.defaults(arg, base, true))
 
-	T.keyart = document.createElement('netflix-img')
-	T.keyart.setAttribute('data-dynamic-key', 'Keyart')
-	T.keyart.setAttribute('width', adParams.adWidth)
-	T.appendChild(T.keyart)
+	T.background = document.createElement('netflix-img')
+	T.background.setAttribute('data-dynamic-key', 'Background')
+	T.background.setAttribute('width', adParams.adWidth)
+	T.appendChild(T.background)
 
 	T.pedigree = new UITextField({
 		target: T,
@@ -76,7 +77,6 @@ export function EndFrame(arg) {
 	// title treatment
 	T.tt = document.createElement('netflix-img')
 	T.tt.setAttribute('data-dynamic-key', 'Title_Treatment')
-	T.tt.setAttribute('width', 300)
 	T.appendChild(T.tt)
 
 	// free trial messaging
@@ -122,22 +122,8 @@ export function EndFrame(arg) {
 	T.postMarkupStyling = function() {
 		let T = View.endFrame
 
-		// title treatment:
-		// no TT url provided
-		// so using default TT for given layout
-		if (!adData.hasTT) {
-			// removing empty netflix-img element before using default TT
-			T.removeChild(T.tt)
-			T.tt = new UIImage({
-				target: T,
-				source: adData.ttSrc,
-				css: {
-					width: 300
-				}
-			})
-		}
-
-		Align.set(T.tt, Align.CENTER)
+		// title treatment
+		titleTreatmentLayout(T)
 
 		Align.set(T.pedigree, {
 			x: {
