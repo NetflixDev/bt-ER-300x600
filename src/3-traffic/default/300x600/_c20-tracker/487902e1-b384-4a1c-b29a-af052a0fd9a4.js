@@ -15,13 +15,12 @@ module.exports = {
     "creative": "./dist/3-traffic/default/300x600",
     "toolkit": "./toolkit/300x600_NF_Global_Template_ContainerRecycle_Layered.psd",
     "layouts": {
-      "SIDE_BY_SIDE_1": "Side By Side 1",
-      "SIDE_BY_SIDE_2": "Side By Side 2"
+      "SIDE_BY_SIDE": "Side By Side"
     }
   },
   "context": "RED Interactive",
   "state": "published",
-  "updated": 1557535985686,
+  "updated": 1557791107956,
   "username": "GitHub",
   "full_name": "NetflixDev/bt-ER-300x600",
   "html_url": "https://github.com/NetflixDev/bt-ER-300x600",

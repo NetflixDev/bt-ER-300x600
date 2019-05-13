@@ -56,14 +56,10 @@ export class Control {
 				const layout = window.Creative && Creative.layout
 				let ttUrl, ttCenter
 				switch (layout) {
-					case 'SIDE_BY_SIDE_1':
+					case 'SIDE_BY_SIDE':
 					default:
 						ttUrl = 'title-treatments/tt-upper.png'
 						ttCenter = { x: 150, y: 90 }
-						break
-					case 'SIDE_BY_SIDE_2':
-						ttUrl = 'title-treatments/tt-lower.png'
-						ttCenter = { x: 150, y: 270 }
 						break
 				}
 

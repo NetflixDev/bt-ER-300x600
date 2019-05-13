@@ -9,7 +9,6 @@ import { Animation } from '@common/js/Animation.js'
 import { Control } from '@common/js/Control.js'
 import '@netflixadseng/wc-netflix-flushed-ribbon'
 import CanvasIris from './CanvasIris.js'
-import '@netflixadseng/wc-netflix-video'
 import { UIComponent, UIBorder, UIButton, UIImage, TextFormat, UITextField, UISvg } from 'ad-ui'
 import { ObjectUtils } from 'ad-utils'
 
