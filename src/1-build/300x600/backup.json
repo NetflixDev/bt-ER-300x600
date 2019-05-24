@@ -10,15 +10,15 @@
       "id": "Title_Treatment",
       "url": ""
     },
+    "text.Tune_In": {
+      "type": "text",
+      "id": "Tune_In",
+      "text": "Tune In"
+    },
     "text.CTA": {
       "type": "text",
       "id": "CTA",
       "text": "WATCH NOW"
-    },
-    "text.Tune_In": {
-      "type": "text",
-      "id": "Tune_In",
-      "text": ""
     },
     "text.FTM": {
       "type": "text",
