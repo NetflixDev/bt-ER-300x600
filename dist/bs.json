@@ -7,10 +7,10 @@
   "build_source_options": {
     "stub_paths": []
   },
-  "output": "/Users/Greg/Documents/_NETFLIX/c20-sources/bt-ER-300x600",
+  "output": "/Users/derek.miranda/Internal/c20/build-templates/bt-ER-300x600",
   "filters": {},
   "id": "Container 2.0 - 300x600",
-  "bsid": "7ad5039c-119c-4a69-99d5-918a104fa9ed",
+  "bsid": "3da20e92-339e-4bf3-993f-f76b56938929",
   "processing": false,
   "error": false
 }
