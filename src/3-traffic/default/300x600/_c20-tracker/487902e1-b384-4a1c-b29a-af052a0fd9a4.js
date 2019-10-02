@@ -1,6 +1,6 @@
 // GENERIC SOURCE TRACKER: bt-Endframe-Resolve
-if (typeof module === 'undefined') {
-	module = {}
+if (typeof module === "undefined") {
+  module = {};
 }
 // prettier-ignore
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
   },
   "context": "RED Interactive",
   "state": "published",
-  "updated": 1569883920151,
+  "updated": 1570043574075,
   "username": "GitHub",
   "full_name": "NetflixDev/bt-ER-300x600",
   "html_url": "https://github.com/NetflixDev/bt-ER-300x600",
